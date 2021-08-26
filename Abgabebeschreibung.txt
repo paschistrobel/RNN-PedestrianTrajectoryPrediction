@@ -1,0 +1,12 @@
+In der Abgabe ist folgendes enthalten:
+- PedestrianTrajectoryPrediction.ipynb: Jupyter Notebook, das das eigentliche Programm/ Projekt enthält
+- DataPreparation.ipynb:jupyter Notebook, das die Aufbereitung der Daten erledigt. Wird von PedestrianTrajectoryPrediction.ipynb aufgerufen!
+- Plotting: Jupyter Notebook, das Methoden zum Erstellen unterschiedlicher Plots bereitstellt. Wird von PedestrianTrajectoryPrediction.ipynb aufgerufen!
+
+- Ordner "Data": Enthält sowohl die Rohdatensätze (im Unterordner "raw"), als auch die eigentlichen Trainings-, Test- und Validierungsdaten nach dem
+	Splitten (im Unterordner "datasplits").
+- Ordner "Dokumentation":
+	--> Enthält die eigentliche Projektdokumentation (als Word und PDF Datei)
+	--> Enthält die für die Auswertung verwendeten Ergebnisse (predictions_final.csv). Damit die Ergebnisse für die Performance des RNN erneut reproduziert werden
+	können, wurden vorhergesagten Positionen für alle Testdaten in dieser separaten csv-Datei abgespeichert. Diese kann man dann im Programm einlesen und auswerten lassen.
+	---> Unterordner "Grafiken": Grafiken, die in der Projektdokumentation verwendet wurden.
