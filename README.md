@@ -16,12 +16,13 @@ Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungs
 </p>
 
 ## Lösungsansatz
+
 Der gegebenen Datensatz mit den Positionsdaten wurde zunächst in Trainings-, Validierungs- und Testdaten aufgeteilt. Die Trainingsdaten wurden dann normalisert (Transformation der absoluten Positionskoordinaten in relative Positionsänderungen) und mithilfe einer z-Transformation standardisiert. 
 
 Anschließend wurde ein auf LSTM basierendes Neuronales Netz (Architektur siehe Abb. 2) für insgesamt 30 Epochen (Batch size = 16, Lernrate = 5\*10^-5) trainiert.
 
 Die Vorhersage der zwölf zukünftigen Positionen erfolgt **sequenziell** und nach dem *Sliding-Window Prinzip*. D. h. es wird immer basierend auf acht gegebenen Positionsdaten die nächste Position vorhergesagt. Diese wird anschließend wiederum für die nächste Prädiktion herangezogen etc.
-<br>
+
 <p align="center">
 	<img src="Dokumentation/Grafiken/network_architecture.PNG" width="400">
 	<br>
