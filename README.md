@@ -25,7 +25,8 @@ Zur Lösung des Problems wurde ein auf LSTM basierendes neuronales Netz mit folg
 Anmerkung: Code und 
 
 ## Evaluation
-Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert.
+Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert
+
 	- Average displacement error (ADE): Durchschnittliche Fehler zwischen prädizierten Positionen und Ground-Trouth für alle (12) vorhergesagten Zeitschritte von allen Fußgängern des Testdatensatzes
 	- Final displacement error (FDE): Der durchschnittliche Fehler zwischen prädizierter Position und Ground-Trouth zum finalen Zeitpunkt eines Fußgängers, für allen Fußgängern des Testdatensatzes
 
