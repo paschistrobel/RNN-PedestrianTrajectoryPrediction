@@ -28,7 +28,8 @@ Anmerkung: Code und
 Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert.
 - **Average displacement error (ADE)**: Durchschnittliche Fehler zwischen prädizierten Positionen und Ground-Trouth für alle (12) vorhergesagten Zeitschritte von allen Fußgängern des Testdatensatzes.
 - **Final displacement error (FDE)**: Der durchschnittliche Fehler zwischen prädizierter Position und Ground-Trouth zum finalen Zeitpunkt eines Fußgängers, für allen Fußgängern des Testdatensatzes.
-<br>
+
 Das vorgestellte System erreicht dabei einen __FDE von 0,76__ und einen **ADE von 1,56**.
+<br>
 <br>
 Zudem konnte durch eine **qualitative Analyse** einige Failure Cases festgestellt werden, bei denen der Ansatz zu versagen scheint
