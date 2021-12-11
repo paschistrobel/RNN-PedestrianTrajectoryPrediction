@@ -1,6 +1,6 @@
 # Trainieren eines Neuronalen Netzes zur Prädiktion der Bewegungsbahnen von Fußgängern
-Modulprüfung zum Thema "Trajektorien-Prädiktion von Fußgängern" im Fach "Computational Intelligence" an der Universität Regensburg im Sommersemester 2021.
-Hier geht's zur vollständigen [Projektdokumentation](Dokumentation/Projektdokumentation.pdf)
+Modulprüfung zum Thema "Trajektorien-Prädiktion von Fußgängern" im Fach "Computational Intelligence" an der Universität Regensburg im Sommersemester 2021.<br>
+Hier geht's zur vollständigen [Projektdokumentation](Dokumentation/Projektdokumentation.pdf)<br>
 Hier geht's zum [Jupyter-Notebook des Projektes](PedestrianTrajectoryPrediction.ipynb)
 
 ## Aufgabe
