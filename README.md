@@ -36,3 +36,20 @@ Das vorgestellte System erreicht dabei einen __FDE von 0,76__ und einen **ADE vo
 
 ### Failure Cases
 Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnten einige Failure Cases des Ansatzes festgestellt werden.
+<p align="center">
+	<img src="Dokumentation/Grafiken/fc_sudden_change_3.png" width="400">
+	<br>
+	<em>
+		Abbildung 3: Überraschende Richtungsänderung.
+	</em>
+	<img src="Dokumentation/Grafiken/fc_many_changes_1.png" width="400">
+	<br>
+	<em>
+		Abbildung 4: Mehrfache Richtungs- oder Geschwindigkeitsänderungen.
+	</em>
+	<img src="Dokumentation/Grafiken/fc_no_motion.png" width="400">
+	<br>
+	<em>
+		Abbildung 5: Keine Positionsänderung.
+	</em>
+</p>
