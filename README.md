@@ -35,9 +35,27 @@ Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert.
 Das vorgestellte System erreicht dabei einen __FDE von 0,76__ und einen **ADE von 1,56**.
 
 ### Failure Cases
-Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnten einige Failure Cases des Ansatzes festgestellt werden.
+Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnten einige Failure Cases des Ansatzes festgestellt werden:
+- Plötzlichen Richtungsänderungen bei keinerlei Hinweisen in den beobachteten Daten (Abb. 3). In diesem Fall sind zusätzliche Kontextinformationen (über Straßenverlauf, andere Fußgänger, Objekte in der Wegbahn, etc.) notwendig, um bessere Vorhersagen treffen zu können.
+- Auch häufige Richtungs- oder Geschwindigkeitsänderungen führen zu Problemen bei der Vorhersage (Abb. 4). Ein richtiges Muster ist auch für den Menschen schwer zu erkennen. Erneut sind zusätzliche Kontextinformationen nötig.
+- Keine Fortbewegung des Fußgängers (Abb. 5). Bei keinerlei x- und y- Positionsänderungen weichen die Vorhersagen des Systems geringfügig von |0| ab. Durch das sequentielle Vorgehen bei den Vorhersagen akkumuliert sich dann der Fehler. 
 <p align="center">
 	<img src="Dokumentation/Grafiken/fc_sudden_change_3.png" width="400">
-	<img src="Dokumentation/Grafiken/fc_many_changes_1.png" width="400">	
+	<br>
+	<em>
+		Abbildung 3: Überraschende Richtungsänderung.
+	</em>
+	<br>
+	<img src="Dokumentation/Grafiken/fc_many_changes_1.png" width="400">
+	<br>
+	<em>
+		Abbildung 4: Mehrfache Richtungs- oder Geschwindigkeitsänderungen.
+	</em>
+	<br>
 	<img src="Dokumentation/Grafiken/fc_no_motion.png" width="400">
+	<br>
+	<em>
+		Abbildung 5: Keine Positionsänderung.
+	</em>
 </p>
+
