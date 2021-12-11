@@ -35,7 +35,7 @@ Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert.
 Das vorgestellte System erreicht dabei einen __FDE von 0,76__ und einen **ADE von 1,56**.
 
 ### Failure Cases
-Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnten einige Failure Cases des Ansatzes festgestellt werden:
+Nur die wenigsten Bewegungsbahnen sind so trivial wie die aus Abb. 1. Abrupte Richtungs- und Geschwindigkeitsänderungen sorgen für ein oft unberechenbares Verhalten von Fußgängern und damit zu Performance-Einbußen bei der Prädiktion. Durch eine **qualitative Analyse** konnten einige Failure Cases identifiziert werden, bei denen der vorgestellte Ansatz Schwierigkeiten für zuverlässige Vorhersagen aufweist. 
 
 <p align="center">
 	<img src="Dokumentation/Grafiken/fc_sudden_change_3.png" width="400">
