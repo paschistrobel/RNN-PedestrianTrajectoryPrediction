@@ -6,8 +6,13 @@ Modulprüfung zum Thema "Trajektorien-Prädiktion von Fußgängern" im Fach "Com
 ## Aufgabe
 Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungsbahn eines Fußgängers, basierend auf bekannten, vergangenen Positionen. Ganz speziell sind in diesem Fall die ersten 8 Positionen eines Fußgängers gegeben und mit diesen Informationen sollen die nächsten 12 prädiziert werden. Die Aufgabenstellung wird auch nochmal in Abb. 1 verdeutlicht. <br>
 <p align="center">
-	<img src="Dokumentation/Grafiken/fc_best1.png" width="400"><br>
-	<em>Abbildung 1: Beispiel-Trajektorie eines Fußgängers. Mithilfe der ersten acht beobachteten Positionen (blau) prädiziert das System die zukünftigen zwölf (rot). Die vorhergesagte Trajektorie sollte dabei möglichst nah an der Ground-Trouth (grün) liegen.</em>
+	<img src="Dokumentation/Grafiken/fc_best1.png" width="400">
+	<br>
+	<em>
+		Abbildung 1: Beispiel-Trajektorie eines Fußgängers. Mithilfe der ersten acht beobachteten <br>
+		Positionen (blau) prädiziert das System die zukünftigen zwölf (rot). Die vorhergesagte <br>
+		Trajektorie sollte dabei möglichst nah an der Ground-Trouth (grün) liegen.
+	</em>
 </p>
 
 ## Lösungsansatz
