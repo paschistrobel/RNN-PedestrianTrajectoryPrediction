@@ -5,7 +5,7 @@ Hier geht's zum [Jupyter-Notebook des Projektes](PedestrianTrajectoryPrediction.
 
 ## Aufgabe
 Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungsbahn eines Fußgängers, basierend auf bekannten, vergangenen Positionen. Ganz speziell sind in diesem Fall die ersten 8 Positionen eines Fußgängers gegeben und mit diesen Informationen sollen die nächsten 12 prädiziert werden. Die Aufgabenstellung wird auch nochmal in Abb. 1 verdeutlicht. 
-![Beispieltrajektorie zur Verdeutlichung der Aufgabenstellung](Dokumentation/Grafiken/fc_best1.png)
+![Beispieltrajektorie zur Verdeutlichung der Aufgabenstellung](Dokumentation/Grafiken/fc_best1.png?raw=true "Title")
 
 ## Lösungsansatz
 - zuerst normalisieren und standardisieren
