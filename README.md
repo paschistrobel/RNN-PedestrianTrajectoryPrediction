@@ -42,11 +42,13 @@ Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnte
 	<em>
 		Abbildung 3: Überraschende Richtungsänderung.
 	</em>
+	<br>
 	<img src="Dokumentation/Grafiken/fc_many_changes_1.png" width="400">
 	<br>
 	<em>
 		Abbildung 4: Mehrfache Richtungs- oder Geschwindigkeitsänderungen.
 	</em>
+	<br>
 	<img src="Dokumentation/Grafiken/fc_no_motion.png" width="400">
 	<br>
 	<em>
