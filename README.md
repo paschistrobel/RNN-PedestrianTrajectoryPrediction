@@ -16,7 +16,9 @@ Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungs
 </p>
 
 ## Lösungsansatz
-Der gegebenen Datensatz mit den Positionsdaten wurde zunächst in Trainings-, Validierungs- und Testdaten aufgeteilt. Die Trainingsdaten wurden dann normalisert (Transformation der absoluten Positionskoordinaten in relative Positionsänderungen) und mithilfe einer z-Transformation standardisiert. Anschließend wurde ein auf LSTM basierendes Neuronales Netz (Architektur siehe Abb. 2) für insgesamt 30 Epochen (Batch size = 16, Lernrate = 5\*10^-5) trainiert.<br>
+Der gegebenen Datensatz mit den Positionsdaten wurde zunächst in Trainings-, Validierungs- und Testdaten aufgeteilt. Die Trainingsdaten wurden dann normalisert (Transformation der absoluten Positionskoordinaten in relative Positionsänderungen) und mithilfe einer z-Transformation standardisiert. Anschließend wurde ein auf LSTM basierendes Neuronales Netz (Architektur siehe Abb. 2) für insgesamt 30 Epochen (Batch size = 16, Lernrate = 5\*10^-5) trainiert. 
+Die Vorhersage der zwölf zukünftigen Positionen erfolgt anschließend **sequenziell** und nach dem *Sliding-Window Prinzip*. D. h. es wird immer basierend auf acht gegebenen Positionsdaten die nächste Position vorhergesagt. Diese wird anschließend wiederum für die nächste Prädiktion herangezogen etc.
+<br>
 <p align="center">
 	<img src="Dokumentation/Grafiken/network_architecture.PNG" width="400">
 	<br>
@@ -45,7 +47,7 @@ Nur die wenigsten Bewegungsbahnen sind so trivial wie die aus Abb. 1. Abrupte Ri
 	</em>
 </p>
 
-- Plötzlichen Richtungsänderungen bei keinerlei Hinweisen in den beobachteten Daten (Abb. 3). In diesem Fall sind zusätzliche Kontextinformationen (über Straßenverlauf, andere Fußgänger, Objekte in der Wegbahn, etc.) notwendig, um bessere Vorhersagen treffen zu können.
+1. Plötzlichen Richtungsänderungen bei keinerlei Hinweisen in den beobachteten Daten (Abb. 3). In diesem Fall sind zusätzliche Kontextinformationen (über Straßenverlauf, andere Fußgänger, Objekte in der Wegbahn, etc.) notwendig, um bessere Vorhersagen treffen zu können.
 
 <p align="center">
 	<img src="Dokumentation/Grafiken/fc_many_changes_1.png" width="400">
@@ -55,7 +57,7 @@ Nur die wenigsten Bewegungsbahnen sind so trivial wie die aus Abb. 1. Abrupte Ri
 	</em>
 </p>
 
-- Auch häufige Richtungs- oder Geschwindigkeitsänderungen führen zu Problemen bei der Vorhersage (Abb. 4). Ein richtiges Muster ist auch für den Menschen schwer zu erkennen. Erneut sind zusätzliche Kontextinformationen nötig.
+2. Auch häufige Richtungs- oder Geschwindigkeitsänderungen führen zu Problemen bei der Vorhersage (Abb. 4). Ein richtiges Muster ist auch für den Menschen schwer zu erkennen. Erneut sind zusätzliche Kontextinformationen nötig.
 
 <p align="center">
 	<img src="Dokumentation/Grafiken/fc_no_motion.png" width="400">
@@ -65,4 +67,4 @@ Nur die wenigsten Bewegungsbahnen sind so trivial wie die aus Abb. 1. Abrupte Ri
 	</em>
 </p>
 
-- Keine Fortbewegung des Fußgängers (Abb. 5). Bei keinerlei x- und y- Positionsänderungen weichen die Vorhersagen des Systems geringfügig von |0| ab. Durch das sequentielle Vorgehen bei den Vorhersagen akkumuliert sich dann der Fehler. 
+3. Keine Fortbewegung des Fußgängers (Abb. 5). Bei keinerlei x- und y- Positionsänderungen weichen die Vorhersagen des Systems geringfügig von |0| ab. Durch das sequentielle Vorgehen bei den Vorhersagen akkumuliert sich dann der Fehler. 
