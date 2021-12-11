@@ -11,7 +11,7 @@ Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungs
 - zuerst normalisieren und standardisieren
 Zur Lösung des Problems wurde ein auf LSTM basierendes neuronales Netz mit folgender Architektur trainiert. <br>
 ![Verwendete Netzwerkarchitektur](Dokumentation/Grafiken/network_architecture.PNG | width=100)
-<img src="Dokumentation/Grafiken/network_architecture.PNG" width="10">
+<img src="Dokumentation/Grafiken/network_architecture.PNG" width="200">
 
 Anmerkung: Code und 
 
