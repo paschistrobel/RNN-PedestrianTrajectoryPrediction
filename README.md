@@ -16,20 +16,23 @@ Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungs
 </p>
 
 ## Lösungsansatz
-- zuerst normalisieren und standardisieren
-Zur Lösung des Problems wurde ein auf LSTM basierendes neuronales Netz mit folgender Architektur trainiert. <br>
+Der gegebenen Datensatz mit den Positionsdaten wurde zunächst in Trainings-, Validierungs- und Testdaten aufgeteilt. Die Trainingsdaten wurden dann normalisert (Transformation der absoluten Positionskoordinaten in relative Positionsänderungen) und mithilfe einer z-Transformation standardisiert. Anschließend wurde ein auf LSTM basierendes Neuronales Netz (Architektur siehe Abb. 2) für insgesamt 30 Epochen (Batch size = 16, Lernrate = 5\*10^-5) trainiert.<br>
 <p align="center">
 	<img src="Dokumentation/Grafiken/network_architecture.PNG" width="400">
+	<br>
+	<em>
+		Abbildung 1: Architektur des trainierten Models. Klammern enthalten die Form des Outputs <br>
+		einer Schicht.
+	</em>
 </p>
 
-Anmerkung: Code und 
-
 ## Evaluation
+### Performance
 Der vorgestellte Ansatz wurde dann anhand zweier gängiger Metriken evaluiert.
 - **Average displacement error (ADE)**: Durchschnittliche Fehler zwischen prädizierten Positionen und Ground-Trouth für alle (12) vorhergesagten Zeitschritte von allen Fußgängern des Testdatensatzes.
 - **Final displacement error (FDE)**: Der durchschnittliche Fehler zwischen prädizierter Position und Ground-Trouth zum finalen Zeitpunkt eines Fußgängers, für allen Fußgängern des Testdatensatzes.
 
 Das vorgestellte System erreicht dabei einen __FDE von 0,76__ und einen **ADE von 1,56**.
-<br>
-<br>
-Zudem konnte durch eine **qualitative Analyse** einige Failure Cases festgestellt werden, bei denen der Ansatz zu versagen scheint
+
+### Failure Cases
+Durch eine **qualitative Analyse** der vom System getroffenen Vorhersagen konnten einige Failure Cases des Ansatzes festgestellt werden.
