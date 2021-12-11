@@ -4,13 +4,13 @@ Hier geht's zur vollständigen [Projektdokumentation](Dokumentation/Projektdokum
 Hier geht's zum [Jupyter-Notebook des Projektes](PedestrianTrajectoryPrediction.ipynb)
 
 ## Aufgabe
-Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungsbahn eines Fußgängers, basierend auf bekannten, vergangenen Positionen. Ganz speziell sind in diesem Fall die ersten 8 Positionen eines Fußgängers gegeben und mit diesen Informationen sollen die nächsten 12 prädiziert werden. Die Aufgabenstellung wird auch nochmal in Abb. 1 verdeutlicht. 
-![Beispieltrajektorie zur Verdeutlichung der Aufgabenstellung](Dokumentation/Grafiken/fc_best1.png?raw=true "Title")
+Ziel der Projektarbeit ist die Vorhersage der zukünftigen Trajektorie/Bewegungsbahn eines Fußgängers, basierend auf bekannten, vergangenen Positionen. Ganz speziell sind in diesem Fall die ersten 8 Positionen eines Fußgängers gegeben und mit diesen Informationen sollen die nächsten 12 prädiziert werden. Die Aufgabenstellung wird auch nochmal in Abb. 1 verdeutlicht. <br>
+![Beispieltrajektorie zur Verdeutlichung der Aufgabenstellung](Dokumentation/Grafiken/fc_best1.png)
 
 ## Lösungsansatz
 - zuerst normalisieren und standardisieren
-Zur Lösung des Problems wurde ein auf LSTM basierendes neuronales Netz mit folgender Architektur trainiert
-![Verwendete Netzwerkarchitektur](Dokumentation/Grafiken/network_architecture.PNG)
+Zur Lösung des Problems wurde ein auf LSTM basierendes neuronales Netz mit folgender Architektur trainiert. <br>
+![Verwendete Netzwerkarchitektur](Dokumentation/Grafiken/network_architecture.PNG | width=100)
 
 Anmerkung: Code und 
 
